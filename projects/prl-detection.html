@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRL Detection on QSM | Eunseon Jeong</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/theme.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="inner">
+      <a class="brand" href="../index.html"><b>Eunseon</b> Jeong</a>
+      <nav>
+        <a href="../index.html">about</a>
+        <a href="../personal.html">personal</a>
+        <a href="../publications.html">publications</a>
+        <a class="active" href="../projects.html">projects</a>
+        <a href="../cv.html">cv</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="post-title" style="font-size:2rem">Deep Learning-Based PRL Detection on QSM</h1>
+    <p class="desc">Automated detection and burden assessment of paramagnetic rim lesions in multiple sclerosis.</p>
+    <div class="tags">
+      <span>Multiple Sclerosis</span><span>QSM</span><span>nnU-Net</span><span>Segmentation</span><span>Biomarker</span>
+    </div>
+
+    <h3>Overview</h3>
+    <p>
+      Paramagnetic rim lesions (PRLs) are a marker of chronic active inflammation in multiple sclerosis (MS), but
+      identifying them manually on quantitative susceptibility mapping (QSM) is time-consuming and requires expertise.
+      I co-led the development of a deep learning framework that automatically detects PRLs and quantifies a
+      patient's PRL burden, comparing a single-sequence <b>QSM-only</b> model with a multimodal <b>QSM + FLAIR</b> model.
+    </p>
+
+    <figure>
+      <img src="../assets/img/projects/prl_workflow.png" alt="MRI preprocessing and nnU-Net segmentation workflow">
+      <figcaption>Two-step workflow: registration of FLAIR to QSM space via skull-stripped GRE magnitude, followed by 3D nnU-Net segmentation with QSM-only or QSM + FLAIR inputs.</figcaption>
+    </figure>
+
+    <h3>What I did</h3>
+    <ul>
+      <li>Built the MRI preprocessing pipeline (skull stripping, FLAIR-to-QSM registration) for 106 patients</li>
+      <li>Trained and evaluated 3D nnU-Net models with 5-fold cross-validation for patient-level classification, lesion-level detection, and PRL burden estimation</li>
+      <li>Validated the models on internal and temporal test sets and linked automated PRL burden to clinical outcomes in a separate cohort of 117 patients</li>
+    </ul>
+
+    <h3>Key results</h3>
+    <ul>
+      <li>QSM-only model achieved higher lesion-level sensitivity (72.4% vs. 62.1%) and precision (78.2% vs. 65.6%) than QSM + FLAIR on the internal test set</li>
+      <li>Both models reached 100% patient-level sensitivity on the temporal test set</li>
+      <li>Higher automated PRL burden was associated with poorer cognition (<i>P</i> = 0.002)</li>
+    </ul>
+
+    <figure>
+      <img src="../assets/img/projects/prl_thumb.png" alt="Representative segmentation examples">
+      <figcaption>Representative examples: ground truth (red), QSM-only predictions (yellow), and QSM + FLAIR predictions (blue).</figcaption>
+    </figure>
+
+    <h3>Publication</h3>
+    <p>
+      <b>E. Jeong</b>&dagger;, D. Seo&dagger;, H. H. Moon, H. Yun, Y. Choi, and E. J. Lee.
+      Deep learning-based automated detection and burden assessment of paramagnetic rim lesions on quantitative
+      susceptibility mapping in patients with multiple sclerosis. <i>Korean Journal of Radiology</i>, 27(8):745&ndash;757, 2026.
+      <a href="https://doi.org/10.3348/kjr.2026.0103">[DOI]</a>
+    </p>
+    <p class="note">Figures reproduced from the publication above. &dagger; Co-first author.</p>
+
+    <p><a href="../projects.html">&larr; Back to projects</a></p>
+  </main>
+
+  <footer>&copy; 2026 Eunseon Jeong.</footer>
+</body>
+</html>

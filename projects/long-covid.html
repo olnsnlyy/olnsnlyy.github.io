@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitive Long COVID | Eunseon Jeong</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/theme.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="inner">
+      <a class="brand" href="../index.html"><b>Eunseon</b> Jeong</a>
+      <nav>
+        <a href="../index.html">about</a>
+        <a href="../personal.html">personal</a>
+        <a href="../publications.html">publications</a>
+        <a class="active" href="../projects.html">projects</a>
+        <a href="../cv.html">cv</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="post-title" style="font-size:2rem">Brain Alterations in Cognitive Long COVID</h1>
+    <p class="desc">Neurodegenerative processes in cognitive impairment associated with post-acute sequelae of COVID-19 (PASC).</p>
+    <div class="tags">
+      <span>Long COVID</span><span>Cortical Thickness</span><span>QSM</span><span>Choroid Plexus</span><span>DTI-ALPS</span><span>Blood Biomarkers</span>
+    </div>
+
+    <h3>Overview</h3>
+    <p>
+      Brain changes have been reported after COVID-19, but it was unclear how common they are and whether they
+      reflect neurodegeneration. This study followed individuals about one year after mild COVID-19 and compared
+      those with cognitive impairment (<b>Cog-PASC</b>), those with other, non-cognitive symptoms (<b>Other-PASC</b>),
+      and those without significant symptoms, using brain MRI and blood proteomics across exploration,
+      covariate-matched, and independent validation cohorts (278 participants in total).
+    </p>
+
+    <figure>
+      <img src="../assets/img/projects/pasc_design.png" alt="Study design and cohorts">
+      <figcaption>Study design: exploration (n = 160) and validation (n = 109) cohorts, with symptom assessment, blood biomarkers, and MRI analysis.</figcaption>
+    </figure>
+
+    <h3>What I did</h3>
+    <ul>
+      <li>Performed MRI analysis including cortical parcellation, paramagnetic susceptibility (QSM / chi-separation) mapping, choroid plexus segmentation, and diffusion tensor imaging parameters</li>
+      <li>Quantified glymphatic imaging markers (DTI-ALPS index, choroid plexus volume) across groups</li>
+    </ul>
+
+    <figure>
+      <img src="../assets/img/projects/pasc_thumb.png" alt="Cortical thickness and iron assessment pipeline">
+      <figcaption>Cortical thickness and iron assessment: cortical parcellation and QSM post-processing (phase unwrapping, background field removal, dipole inversion).</figcaption>
+    </figure>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li>Cog-PASC showed cortical thinning in the cingulate and insular cortices and increased paramagnetic susceptibility in the hippocampus</li>
+      <li>Enlarged choroid plexus volume and elevated astroglial and neuronal damage-associated blood proteins in Cog-PASC</li>
+      <li>Findings were reproduced in an independent validation cohort, and were not observed in other PASC subtypes</li>
+    </ul>
+
+    <h3>Publication</h3>
+    <p>
+      D. Seo&dagger;, Y. Choi&dagger;, <b>E. Jeong</b>, et al.
+      Distinct brain alterations and neurodegenerative processes in cognitive impairment associated with post-acute
+      sequelae of COVID-19. <i>Nature Communications</i>, 16:10552, 2025.
+      <a href="https://doi.org/10.1038/s41467-025-65597-z">[DOI]</a>
+    </p>
+    <p class="note">Figures reproduced from the publication above (open access, CC BY). &dagger; Co-first author.</p>
+
+    <p><a href="../projects.html">&larr; Back to projects</a></p>
+  </main>
+
+  <footer>&copy; 2026 Eunseon Jeong.</footer>
+</body>
+</html>
