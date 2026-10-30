@@ -204,5 +204,6 @@ footer {
   ol.bibliography li, .cv-entry { flex-direction: column; gap: 0.3rem; }
   .abbr { flex-basis: auto; width: 110px; }
   .cv-entry .when { flex-basis: auto; }
-  .navbar nav { gap: 0.9rem; }
+  .navbar .inner { flex-wrap: wrap; gap: 0.4rem; }
+  .navbar nav { gap: 0.9rem; flex-wrap: wrap; }
 }
