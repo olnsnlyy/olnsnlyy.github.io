@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Eunseon Jeong</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/theme.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="inner">
+      <a class="brand" href="index.html"><b>Eunseon</b> Jeong</a>
+      <nav>
+        <a href="index.html">about</a>
+        <a href="publications.html">publications</a>
+        <a class="active" href="cv.html">cv</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="post-title">cv</h1>
+    <h3>Education</h3>
+    <div class="cv-entry">
+      <div class="when">Mar 2024 &ndash; Feb 2026</div>
+      <div class="what">
+        <div class="role">M.S. in Medical Science (Biomedical Engineering)</div>
+        <div>University of Ulsan College of Medicine, Asan Medical Center, Seoul, Korea &middot; GPA 3.86/4.00</div>
+        <ul>
+          <li>Thesis: Development and Clinical Application of Proton-Density Magnetic Resonance Angiography</li>
+          <li>Advisor: Seung Chai Jung, M.D., Ph.D.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">Mar 2021 &ndash; Feb 2024</div>
+      <div class="what">
+        <div class="role">B.S. in Biomedical Engineering</div>
+        <div>Hankuk University of Foreign Studies, Yongin, Korea</div>
+      </div>
+    </div>
+
+    <h3>Research Experience</h3>
+    <div class="cv-entry">
+      <div class="when">May 2023 &ndash; Present</div>
+      <div class="what">
+        <div class="role">Researcher, Department of Radiology</div>
+        <div>Asan Medical Center, Seoul, Korea</div>
+        <p>Develops deep learning-based quantitative brain MRI biomarkers and applies them to clinical patient cohorts in collaboration with neuroradiologists and neurologists. Contributed to 15 peer-reviewed publications (2025&ndash;2026).</p>
+        <ul>
+          <li>Developed nnU-Net models for automated paramagnetic rim lesion detection on quantitative susceptibility mapping (QSM) in multiple sclerosis and for choroid plexus segmentation</li>
+          <li>Quantified glymphatic imaging markers (DTI-ALPS, perivascular spaces, gadolinium T1 mapping) in ALS, long COVID, multiple sclerosis, Parkinson's disease, and normal aging</li>
+          <li>Performed DSC perfusion-derived oxygen metabolic analysis (OEF<sub>max</sub>, CMRO<sub>2</sub>) in cognitively impaired populations</li>
+          <li>Built MRI processing pipelines (FreeSurfer, FSL, Python) harmonizing biomarker extraction across five multi-scanner cohorts</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Research Projects</h3>
+    <div class="cv-entry">
+      <div class="when">Mar 2026 &ndash; Present</div>
+      <div class="what">
+        <div class="role">Oxygen Metabolic Characterization of Paramagnetic Rim Lesions in MS</div>
+        <p>Applied a deep learning QSM&ndash;qBOLD model to multi-echo GRE in 110 MS patients (391 lesions) and 35 healthy controls, mapping OEF, susceptibility, R<sub>2</sub>, and venous blood volume across lesion zones and relating lesion-level patterns to clinical disability (EDSS). First-author manuscript under review.</p>
+      </div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">Dec 2025 &ndash; Present</div>
+      <div class="what">
+        <div class="role">Structure&ndash;Function Coupling Across Clinical Stages of ALS</div>
+        <p>Measured structure&ndash;function coupling in 77 ALS patients (King's stages 1&ndash;4) and 73 healthy controls, showing stage-dependent coupling decline in global, cingulo-opercular, and default-mode networks. First-author manuscript under review.</p>
+      </div>
+    </div>
+    <div class="cv-entry">
+      <div class="when">Apr 2025 &ndash; Present</div>
+      <div class="what">
+        <div class="role">Proton-Density MR Angiography for Intracranial Aneurysm Detection (M.S. Thesis)</div>
+        <p>Developed an automated volume-rendering pipeline for proton-density MR angiography using TOF-guided vessel labeling and 3D nnU-Net segmentation (Dice 0.87). Aneurysm detection was evaluated against TOF-MRA by two independent neuroradiologists, showing comparable diagnostic performance. First-author manuscript in preparation.</p>
+      </div>
+    </div>
+
+    <h3>Publications</h3>
+    <p>15 peer-reviewed journal articles, 1 preprint, and 2 conference abstracts. See the <a href="publications.html">publications</a> page for the full list.</p>
+
+    <h3>Skills</h3>
+    <dl class="skills">
+      <dt>Quantitative MRI</dt>
+      <dd>QSM, chi-separation, DSC perfusion, oxygen metabolic mapping (OEF, CMRO<sub>2</sub>), DTI-ALPS, T1 mapping, MR angiography</dd>
+      <dt>Deep Learning</dt>
+      <dd>nnU-Net segmentation, CNN-based prediction, radiomics, PyTorch</dd>
+      <dt>Neuroimaging Software</dt>
+      <dd>FreeSurfer, FastSurfer, FSL, ANTs, SPM, LST, SynthSeg</dd>
+      <dt>Programming</dt>
+      <dd>Python (scikit-learn, statsmodels, nibabel, SimpleITK), MATLAB, R, Linux/HPC, Git, Docker</dd>
+    </dl>
+
+    <h3>References</h3>
+    <div class="cv-entry">
+      <div class="what">
+        <div class="role">Yangsean Choi, M.D., Ph.D.</div>
+        <div>Clinical Assistant Professor, Department of Radiology, Asan Medical Center</div>
+        <div class="note">Research supervisor and co-author</div>
+      </div>
+    </div>
+    <div class="cv-entry">
+      <div class="what">
+        <div class="role">Seung Chai Jung, M.D., Ph.D.</div>
+        <div>Department of Radiology, Asan Medical Center</div>
+        <div class="note">M.S. thesis advisor</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 Eunseon Jeong.</footer>
+</body>
+</html>
